@@ -1,0 +1,41 @@
+.habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.habilidades h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--cor-9);
+}
+
+.habilidades-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.habilidades-lista li {
+  background-color: var(--cor-1);
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 80px;
+}
+
+.habilidades-lista img {
+  margin-right: 12px;
+}
+
+@media (max-width: 800px) {
+  .habilidades {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .habilidades h2 {
+    margin: auto;
+    padding-bottom: 40px;
+  }
+}

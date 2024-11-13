@@ -1,0 +1,130 @@
+.projetos-bg {
+  background-color: var(--cor-11);
+}
+
+.projetos {
+  padding: 82px;
+}
+
+.projetos h2 {
+  margin-bottom: 32px;
+  text-align: center;
+  color: var(--cor-3);
+}
+
+.projetos p {
+  color: var(--cor-5);
+  margin: auto;
+  margin-bottom: 60px;
+  max-width: 60ch;
+}
+
+#projeto-cordel,
+#projeto-bikcraft,
+#projeto-animais {
+  margin-bottom: 60px;
+}
+
+#projeto-cordel p,
+#projeto-bikcraft p,
+#projeto-animais p {
+  margin-bottom: 18px;
+}
+
+.botao-bikcraft {
+  text-align: center;
+}
+
+#projeto-bikcraft a {
+  display: inline-block;
+}
+
+#projeto-bikcraft a:last-child {
+  margin-left: 12px;
+}
+
+.projetos a {
+  margin: 0 auto;
+}
+
+.projetos-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.projetos-lista img {
+  max-width: 80%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: auto;
+}
+
+.projetos-lista img:hover {
+  filter: grayscale(0%);
+}
+
+.projetos-lista p {
+  display: none;
+}
+
+.tela-menor {
+  display: none;
+}
+
+.tela-menor p {
+  color: var(--cor-6);
+}
+
+.projeto-titulo {
+  text-align: center;
+  color: var(--cor-2) !important;
+  font: 600 1.5rem/1.35 "roboto", sans-serif;
+}
+
+.tela-maior {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .projetos {
+    padding: 32px;
+  }
+  /* .projetos p {
+    margin-bottom: 32px;
+  } */
+  .projetos-lista {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 0px;
+  }
+  .projetos-lista li {
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+  .projetos-lista li {
+    border-radius: 5px;
+    border: 1px solid var(--cor-12);
+
+    background-color: #0c0c0c;
+  }
+  .projetos-lista img {
+    border-radius: 100%;
+    width: 200px;
+    margin: auto;
+  }
+  .projetos-lista p {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  #projeto-cordel,
+  #projeto-bikcraft,
+  #projeto-animais {
+    margin-bottom: 18px;
+  }
+  .tela-menor {
+    display: block;
+  }
+}
