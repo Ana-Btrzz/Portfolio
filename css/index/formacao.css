@@ -39,8 +39,11 @@
 
 @media (max-width: 800px) {
   .formacao {
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
-  .formacao-conteudo li {
+  .formacao-conteudo ul {
+    padding: 0px;
   }
 }
