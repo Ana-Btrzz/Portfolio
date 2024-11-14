@@ -7,8 +7,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 0px 60px;
   align-items: center;
-  background: url("/img/icons/ico-detalhe/code-fechar-c11.svg") no-repeat bottom
-    40px right 40px;
+  background: url("./img/icons/ico-detalhe/code-fechar-c11.svg") no-repeat
+    bottom 40px right 40px;
 }
 
 .footer-img {
