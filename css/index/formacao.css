@@ -5,7 +5,7 @@
 .formacao-bg h2 {
   display: flex;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   padding-top: 60px;
   color: var(--cor-3);
 }
@@ -27,10 +27,24 @@
   color: var(--cor-5);
   max-width: 15ch;
   padding: 8px;
+  position: relative;
 }
 
+/* .formacao-conteudo li:nth-child(1)::before {
+  content: "";
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background-color: var(--cor-p1);
+  bottom: 1px;
+  left: -5px;
+} */
+
 .formacao-conteudo li:last-child {
-  color: var(--cor-9);
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  color: var(--cor-8);
 }
 
 .formacao-conteudo h3 {
@@ -41,9 +55,20 @@
   .formacao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
   }
   .formacao-conteudo ul {
-    padding: 0px;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+}
+.formacao-conteudo li {
+  max-width: 18ch;
+  padding: 4px;
+}
+
+@media (max-width: 400px) {
+  .formacao {
+    padding: 8px;
+    gap: 12px;
   }
 }
