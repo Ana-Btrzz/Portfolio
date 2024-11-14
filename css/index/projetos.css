@@ -82,6 +82,7 @@
   margin: auto;
   border: 2px solid var(--cor-11);
   transition: border 0.3s ease;
+  cursor: pointer;
 }
 
 .projetos-lista img:hover {

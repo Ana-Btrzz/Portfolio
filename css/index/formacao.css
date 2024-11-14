@@ -52,6 +52,9 @@
 }
 
 @media (max-width: 800px) {
+  .formacao-bg {
+    margin-top: -5px;
+  }
   .formacao {
     display: grid;
     grid-template-columns: 1fr 1fr;
