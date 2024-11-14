@@ -1,18 +1,17 @@
 .footer-bg {
-  background-color: var(--cor-12);
+  background: var(--cor-12);
 }
 
 .footer {
-  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 60px;
   align-items: center;
-  background: var(--cor-12) url("/img/code-fechar-c11.svg") no-repeat;
-  background-position: bottom 40px right 40px;
+  background: url("/img/code-fechar-c11.svg") no-repeat bottom 40px right 40px !important;
 }
 
 .footer-img {
+  padding-top: 32px;
   text-align: center;
 }
 
@@ -73,9 +72,9 @@
     padding-top: 32px;
     padding-bottom: 16px;
     gap: 0px;
-    background: var(--cor-12) url("/img/code-fechar-c11.svg") no-repeat;
-    background-position: bottom 20px right 40px;
-    background-size: 50px;
+    background: var(--cor-12) url("/img/code-fechar-c11.svg") no-repeat bottom
+      20px right 40px !important;
+    background-size: 50px !important;
   }
   .footer-img {
     display: none;
