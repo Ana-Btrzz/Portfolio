@@ -8,7 +8,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 0px 60px;
   align-items: center;
-  background: url("/img/code-fechar-c11.svg") no-repeat;
+  background: var(--cor-12) url("/img/code-fechar-c11.svg") no-repeat;
   background-position: bottom 40px right 40px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .footer-lista ul {
-  padding: 16px;
+  padding: 32px;
   border-left: 2px solid var(--cor-11);
 }
 
@@ -73,7 +73,7 @@
     padding-top: 32px;
     padding-bottom: 16px;
     gap: 0px;
-    background: url("/img/code-fechar-c11.svg") no-repeat;
+    background: var(--cor-12) url("/img/code-fechar-c11.svg") no-repeat;
     background-position: bottom 20px right 40px;
     background-size: 50px;
   }
