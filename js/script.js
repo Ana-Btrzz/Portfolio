@@ -18,3 +18,19 @@ function initScrollSuave() {
 }
 
 initScrollSuave();
+
+function teste() {
+  const arrayLi = document.querySelectorAll(".projetos-lista li");
+  function enableDescription(event) {
+    const classe = event.currentTarget.getAttribute("class");
+    const projeto = document.querySelector(`div.${classe}`);
+    console.log(classe);
+    console.log(projeto);
+  }
+
+  arrayLi.forEach((link) => {
+    link.addEventListener("click", enableDescription);
+  });
+}
+
+teste();

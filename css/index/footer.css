@@ -8,7 +8,7 @@
   grid-template-columns: 2fr 3fr;
   gap: 60px;
   align-items: center;
-  background: url(/img/code-fechar-c11.svg) no-repeat bottom 40px right 40px;
+  background: url("/img/code-fechar-c11.svg") no-repeat bottom 40px right 40px;
 }
 
 .footer h2 {
@@ -36,15 +36,11 @@
 
 .footer-lista li {
   text-align: left;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   max-width: max-content;
   color: var(--cor-6);
   font-family: "Fira Code";
 }
-
-/* .footer-lista li:nth-child(1) {
-  margin-bottom: 28px;
-} */
 
 .footer-lista li:hover {
   color: var(--cor-0);
@@ -58,26 +54,27 @@
 .footer-lista img {
   width: 25px;
   height: auto;
-  margin-right: 8px;
+  margin-right: 12px;
 }
 
 @media (max-width: 800px) {
   .footer {
     grid-template-columns: 1fr;
-    padding-top: 20px;
+    padding-top: 32px;
     padding-bottom: 16px;
     gap: 0px;
-    background: url(/img/code-fechar-c11.svg) no-repeat bottom 20px right 40px;
+    background: url("/img/code-fechar-c11.svg") no-repeat bottom 20px right 40px;
     background-size: 50px;
   }
   .footer-img img {
     display: none;
   }
   .footer-lista li {
-    margin-bottom: 12px;
+    margin-bottom: 18px;
   }
   .footer-lista img {
     width: 18px;
+    margin-right: 12px;
     height: auto;
   }
 }
