@@ -26,7 +26,7 @@
   background: var(--cor-12);
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
-  padding: 32px;
+  padding: 16px;
   /* display: none; */
 }
 
@@ -108,6 +108,10 @@
 
 .ativo {
   display: block;
+}
+
+.desativado {
+  display: none;
 }
 
 @media (max-width: 1020px) {
