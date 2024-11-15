@@ -15,7 +15,7 @@
 .projetos p {
   color: var(--cor-5);
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
   max-width: 60ch;
 }
 
@@ -27,23 +27,18 @@
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
   padding: 32px;
-  display: none;
+  /* display: none; */
 }
 
-#projeto-cordel p,
-#projeto-bikcraft p,
-#projeto-animais p {
-  margin-bottom: 18px;
-  color: var(--cor-1);
-}
 
 .btn-ui {
   color: var(--cor-2);
   border: 2px solid var(--cor-10);
   padding: 12px 16px;
+  display: inline-block;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  font: 600 1.125rem/1.35 "Anonymous Pro", sans-serif ;
+  font: 600 1.25rem/1.35 "Anonymous Pro", sans-serif;
 }
 
 .btn-ui:hover{
@@ -54,10 +49,6 @@
 .botao-projeto {
   text-align: end;
   padding-right: 82px;
-}
-
-.botao-projeto a {
-  display: inline-block;
 }
 
 .botao-projeto a:last-child {
@@ -73,6 +64,26 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 40px;
+}
+
+.projetos-lista h3, .projetos h3 {
+  color: var(--cor-1);
+  margin: 0 auto;
+  padding: 24px 0px 12px 0px;
+  font: 600 1.4rem/1.35 "roboto", sans-serif;
+  position: relative;
+  width: max-content;
+}
+
+.projetos-lista h3::before{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  background: var(--cor-p1);
+ left: -22px;
+ top: 37px;
+  
 }
 
 .projetos-lista img {
@@ -91,22 +102,8 @@
   box-shadow: 0 0 3px 1px var(--cor-p3);
 }
 
-.projetos-lista p {
-  display: none;
-}
-
 .tela-menor {
   display: none;
-}
-
-.tela-menor p {
-  color: var(--cor-6);
-}
-
-.projeto-titulo {
-  text-align: center;
-  color: var(--cor-2) !important;
-  font: 600 1.5rem/1.35 "roboto", sans-serif;
 }
 
 .ativo {
@@ -147,8 +144,7 @@
   }
   .projetos-lista p {
     display: block;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
   }
   .botao-projeto {
     text-align: center;
@@ -160,6 +156,9 @@
   }
   .botao-projeto a:last-child {
     margin-left: 12px;
+  }
+  .btn-ui {
+    font: 600 1rem;
   }
   .tela-menor {
     display: block;
