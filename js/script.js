@@ -19,13 +19,27 @@ function initScrollSuave() {
 
 initScrollSuave();
 
-function teste() {
+function activateDescription() {
   const arrayLi = document.querySelectorAll(".projetos-lista li");
+  const divs = document.querySelectorAll(".descricao div");
+
   function enableDescription(event) {
-    const classe = event.currentTarget.getAttribute("class");
-    const projeto = document.querySelector(`div.${classe}`);
-    console.log(classe);
-    console.log(projeto);
+    const clickedClass = event.currentTarget.classList[0]; // Para obter a primeira classe do li
+
+    arrayLi.forEach((li) => {
+      li.classList.remove("ativo");
+    });
+
+    event.currentTarget.classList.add("ativo");
+
+    divs.forEach((div) => {
+      if (div.classList.contains(clickedClass)) {
+        div.classList.add("ativo");
+        console.log("Adicionando ativo a:", div);
+      } else {
+        div.classList.remove("ativo");
+      }
+    });
   }
 
   arrayLi.forEach((link) => {
@@ -33,4 +47,4 @@ function teste() {
   });
 }
 
-teste();
+activateDescription();
