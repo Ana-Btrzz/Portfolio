@@ -1,5 +1,12 @@
 .logo {
-  font-family: "poly";
+  font-family: "Anonymous Pro";
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.logo .ponto-rosa {
+  font-family: "Kanit";
+  font-weight: 400;
 }
 
 .header-bg {

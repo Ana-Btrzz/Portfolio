@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font: 800 1.9rem/1.25 "Source Code Pro", sans-serif;
+  font: 800 1.9rem/1.25 "Fira Code", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -58,7 +58,7 @@ ul {
   font-weight: 600;
   letter-spacing: 0.1px;
   max-width: max-content;
-  border: 2px solid var(--cor-p3);
+  border: 2px solid var(--cor-p2);
   box-shadow: 0 0 0px 1px var(--cor-0);
   cursor: pointer;
   display: flex;
