@@ -3,32 +3,23 @@
 }
 
 .footer {
+  padding: 62px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 60px;
   align-items: center;
-  /*  background: var(--cor-0); */
   background: url("../../img/icons/ico-detalhe/code-fechar-c11.svg") no-repeat
     bottom 40px right 40px;
 }
 
-.footer-img {
-  padding-top: 32px;
-  text-align: center;
-}
-
-.footer-img h2 {
+.footer-titulo h2 {
+  margin-top: auto;
+  margin-bottom: auto;
   color: var(--cor-7);
-  grid-column: 1/-1;
-  margin-bottom: -35px;
 }
 
-.footer-img h2 > span {
+.footer-titulo h2 > span {
   color: var(--cor-p2);
-}
-
-.footer-img img {
-  width: 520px;
 }
 
 .footer-lista {
@@ -78,7 +69,7 @@
       bottom 20px right 40px;
     background-size: 45px;
   }
-  .footer-img {
+  .footer-titulo {
     display: none;
   }
   .footer-lista ul {

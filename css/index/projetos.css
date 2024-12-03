@@ -6,6 +6,10 @@
   padding: 64px;
 }
 
+.projetos strong {
+  color: var(--cor-2);
+}
+
 .projetos h2 {
   margin-bottom: 32px;
   text-align: center;
@@ -126,11 +130,9 @@
 #projeto-bikcraft,
 #projeto-animais {
   margin: 0 80px 60px 80px;
-  padding: 32px;
+  padding: 32;
 }
-.tela-maior {
-  display: none;
-}
+
 
 @media (max-width: 800px) {
   .projetos {
@@ -176,5 +178,8 @@
   }
   .tela-menor {
     display: block;
+  }
+  .tela-maior {
+    display: none;
   }
 }
