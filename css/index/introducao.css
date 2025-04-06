@@ -75,13 +75,17 @@
   position: relative;
 }
 
-.intro p {
+.intro-conteudo {
+  align-self: center;
+}
+
+.intro-conteudo p {
   max-width: 60ch;
   text-indent: 24px;
 }
 
-.intro-conteudo {
-  align-self: center;
+.intro-conteudo p:first-of-type {
+  margin-bottom: 16px !important;
 }
 
 .intro-img img {
