@@ -4,6 +4,7 @@
 @import "./index/projetos.css";
 @import "./index/footer.css";
 @import "./index/cores.css";
+@import "./slide.css";
 
 * {
   box-sizing: border-box;

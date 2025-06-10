@@ -1,0 +1,160 @@
+.slide > .container {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.slide p,
+.slide strong,
+.card-list h2,
+.card-list p {
+  color: var(--cor-3);
+}
+
+.slide > .container > h2 {
+  margin-bottom: 32px;
+  text-align: center;
+  color: var(--cor-3);
+}
+
+.projeto-sobre {
+  color: var(--cor-2);
+  margin: auto;
+  margin-bottom: 32px;
+  max-width: 90ch;
+  text-indent: 24px;
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card-wrapper h2 {
+  text-transform: capitalize;
+  font: 600 1.9rem/1.35 "roboto", sans-serif;
+  letter-spacing: 1.2px;
+  margin-top: 12px;
+}
+
+.card-list .card-item .card-link {
+  height: 500px;
+  user-select: none;
+  display: inline-block;
+  background: var(--cor-10);
+  border: 2px solid var(--cor-9);
+  padding: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: var(--cor-p3);
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.card-list .card-link .badge {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 3px;
+  width: fit-content;
+  border-radius: 50px;
+  border: 1px solid;
+}
+
+.card-list .card-link .badge.html {
+  border-color: #fca265;
+  color: #fca265;
+}
+
+.card-list .card-link .badge.css {
+  border-color: #5590ff;
+  color: #5590ff;
+}
+
+.card-list .card-link .badge.javascript {
+  border-color: #c9c265;
+  color: #c9c265;
+}
+
+.card-list .card-link .badge.react {
+  border-color: #6ed0d3;
+  color: #6ed0d3;
+}
+
+/* .card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  color: #5372f0;
+  margin: 30px 0 5px;
+  border: 1px solid #5372f0;
+  background: none;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372f0;
+} */
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  position: relative;
+  font-size: 35px !important;
+  z-index: 10;
+  cursor: pointer;
+  bottom: -80px;
+  color: var(--cor-p3) !important;
+}
+
+.swiper-button-prev:after {
+  right: 40px;
+}
+
+.swiper-button-next:after {
+  left: -25px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: var(--cor-p3);
+  position: absolute;
+  bottom: 2px;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.btn-projeto {
+}
+
+.card-wrapper .swiper-slide-button {
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
